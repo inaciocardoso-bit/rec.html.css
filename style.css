@@ -1,0 +1,237 @@
+/* ==========================================================================
+   RESET GLOBAL E DEFINIÇÃO DE VARIÁVEIS DE CORES (PALETA COMBINADA)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Uso de fontes alternativas elegantes do sistema (serifadas e sem serifa) */
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.7;
+    color: #2c3e50;
+    background-color: #f7f5f0; /* Fundo off-white caloroso e aconchegante */
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO CABEÇALHO (BANNER PRINCIPAL)
+   ========================================================================== */
+.header-main {
+    /* Combinação de tons terracota e areia para expressar acolhimento e calor humano */
+    background: linear-gradient(135deg, #b85d43, #d4a373);
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.header-main h1 {
+    /* Fonte sem serifa com peso forte para o título principal para criar contraste */
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-main p {
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin: 0 auto;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGAÇÃO (NAV-MENU)
+   ========================================================================== */
+.nav-menu {
+    background-color: #3d5a80; /* Azul escuro acinzentado, trazendo estabilidade */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu a {
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: block;
+    color: #e0f2fe;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efeito Hover com mudança harmônica para o tom terracota */
+.nav-menu a:hover {
+    color: #ffffff;
+    background-color: #b85d43;
+}
+
+/* ==========================================================================
+   CONTAINER E BLOCOS DE CONTEÚDO (VARIEDADE DE CORES QUE COMBINAM)
+   ========================================================================== */
+.content-wrapper {
+    max-width: 850px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Estilo padrão para os blocos */
+.content-block {
+    background-color: #ffffff;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* Títulos internos ganham fontes sem serifa modernas e cores fortes da paleta */
+.content-block h1 {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.content-block p {
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.content-block p:last-child, 
+.content-block ul:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Variações de Cores nos Blocos (Paleta Coordenada) --- */
+
+/* Bloco 1: Tons de Verde Oliva (Representa crescimento e harmonia) */
+.item-primary {
+    border-top: 8px solid #6b705c;
+    background-color: #ffffff;
+}
+.item-primary h1 {
+    color: #6b705c;
+}
+
+/* Bloco 2: Tons de Salvia Claro (Representa cooperação e tranquilidade) */
+.item-secondary {
+    background-color: #e2eafc; /* Azul/Verde pastel muito suave */
+    border-left: 8px solid #2a6f97;
+}
+.item-secondary h1 {
+    color: #1a4968;
+}
+
+/* Bloco 3: Tons de Areia Quente (Representa acolhimento prático) */
+.item-tertiary {
+    background-color: #fefae0; /* Creme pastel aconchegante */
+    border-right: 8px solid #dda15e;
+}
+.item-tertiary h1 {
+    color: #bc6c25;
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DE LISTAS (BLOCO 3)
+   ========================================================================== */
+.content-block ul {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.content-block ul li {
+    position: relative;
+    padding-left: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Marcador estilizado em formato de losango usando cor terracota */
+.content-block ul li::before {
+    content: "◆";
+    position: absolute;
+    left: 0.5rem;
+    color: #b85d43;
+    font-size: 1.1rem;
+    top: -1px;
+}
+
+.content-block ul li p {
+    font-family: Georgia, serif;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+.footer-main {
+    background-color: #2b2d42; /* Cinza grafite muito escuro para fechamento do layout */
+    color: #f4f5f6;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 6rem;
+}
+
+.footer-main p {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+/* ==========================================================================
+   REGRAS DE RESPONSIVIDADE (TELA COMPACTA / SMARTPHONES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-main {
+        padding: 4rem 1rem;
+    }
+
+    .header-main h1 {
+        font-size: 2.3rem;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .content-wrapper {
+        margin: 2rem auto;
+    }
+
+    .content-block {
+        padding: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-block h1 {
+        font-size: 1.6rem;
+    }
+}
